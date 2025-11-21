@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Countdown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="app">
+        <div id="display-container">
+            <input type="text" id="time-input" placeholder="00:00:00" autocomplete="off" spellcheck="false">
+            <div id="time-display">
+                <span id="display-h" class="time-part" title="Edit Hours">00</span>:<span id="display-m"
+                    class="time-part" title="Edit Minutes">00</span>:<span id="display-s" class="time-part"
+                    title="Edit Seconds">00</span>
+            </div>
+        </div>
+
+        <div id="controls">
+            <button id="btn-toggle" title="Start/Pause (Space)">Start</button>
+            <button id="btn-reset" title="Reset (R)">Reset</button>
+            <button id="btn-save" title="Save to History">Save</button>
+            <button id="btn-history" title="History (H)">History</button>
+            <button id="btn-close" title="Close App">Close</button>
+        </div>
+
+        <div id="history-overlay">
+            <h3>Recent Times</h3>
+            <div id="history-list"></div>
+            <div class="history-close" id="btn-close-history">Close</div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

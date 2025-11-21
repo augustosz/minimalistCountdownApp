@@ -1,0 +1,34 @@
+{
+  "name": "minimalist-countdown",
+  "version": "1.0.0",
+  "description": "A minimalist, frameless countdown timer desktop app.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "keywords": [
+    "electron",
+    "countdown",
+    "timer",
+    "minimalist",
+    "productivity"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.minimalist.countdown",
+    "win": {
+      "target": "nsis"
+    },
+    "files": [
+      "**/*",
+      "!dist/*",
+      "!node_modules/*"
+    ]
+  }
+}
