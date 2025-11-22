@@ -140,8 +140,8 @@ class CountdownApp {
     }
 
     saveCurrentToHistory() {
-        if (this.totalMilliseconds > 0) {
-            this.saveToHistory(this.totalMilliseconds);
+        if (this.remainingMilliseconds > 0) {
+            this.saveToHistory(this.remainingMilliseconds);
             // Visual feedback
             if (this.btnSave) {
                 const originalText = this.btnSave.textContent;
